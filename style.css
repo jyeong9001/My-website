@@ -1,0 +1,8 @@
+body {
+  background-image: 0jpg;
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
