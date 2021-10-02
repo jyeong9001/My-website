@@ -1,8 +1,19 @@
+@import "css/clock.css";
+@import "css/greetings.css";
+@import "css/todo.css";
+@import "css/weather.css";
+
 body {
   background-image: 0jpg;
-  display: flex;
+  text-align: center;
+  height: 200vh;
+  background-size: cover;
 }
 
 .hidden {
   display: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }

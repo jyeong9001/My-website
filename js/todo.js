@@ -23,7 +23,7 @@ function paintToDo(newToDo) {
   const span = document.createElement("span");
   span.innerText = newToDo.text;
   const button = document.createElement("button");
-  button.innerText = "X";
+  button.innerText = "✔";
   button.addEventListener("click", deleteToDo);
   li.appendChild(span);
   li.appendChild(button);
@@ -52,3 +52,21 @@ if (savedToDos) {
   toDos = parsedToDos;
   parsedToDos.forEach(paintToDo);
 }
+
+// date
+const date = new Date();
+const month = date.getMonth() + 1;
+const day = date.getDate();
+const yoil = date.getDay();
+const yoilelement = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+
+const dateForm = document.querySelector(".date-form");
+const greetingForm = document.querySelector(".greetings-style h1");
+
+function paintDate() {
+  dateForm.innerText = `${month}/${day}(${yoilelement[yoil]}) TO DO LIST`;
+  greetingForm.classList.add("margin-btm");
+  greetingForm.classList.remove("greetings-style__margin");
+}
+
+todoInput.addEventListener("click", paintDate);
