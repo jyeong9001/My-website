@@ -3,17 +3,22 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 50%;
+  height: 20%;
+  border-radius: 10px;
 }
 
+.todo-container {
+  display: flex;
+  justify-content: center;
+}
 .todo-style [type="text"] {
   border: none;
   border-bottom: rgba(0, 0, 0, 0.7);
   font-size: 30px;
   padding: 20px;
   margin: 10px;
-}
-
-.todo-style [type="text"] {
   border: 0.5px solid rgba(0, 0, 0, 0.3);
   transition: border-color 0.3s ease-in-out;
   color: yellowgreen;
@@ -39,6 +44,10 @@ ul {
   list-style: none;
   font-size: 30px;
   font-weight: bold;
+}
+
+#todo-form [type="text"] {
+  width: 65%;
 }
 
 #todo-list li {
