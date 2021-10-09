@@ -1,0 +1,144 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+html {
+  background-color: #fff9e5;
+}
+
+::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}
+
+.container {
+  width: 375px;
+  height: 20%;
+  /* border: 2px solid slategray; */
+  margin: 100px auto;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.95);
+}
+
+.topbar {
+  color: #080303;
+  display: none;
+}
+
+.topbar .time {
+  margin-left: 20px;
+  font: bold 14px;
+  font-family: Helvetica;
+}
+
+.stopwatch {
+  /* border: 1px solid green; */
+  height: 300px;
+  margin-top: 30px;
+  color: #f5f5f5;
+  background: black;
+  line-height: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.stopwatch span {
+  font-size: 80px;
+  font-family: Helvetica;
+  font-weight: 100;
+}
+
+.btns {
+  height: 100px;
+  /* border: 1px solid gold; */
+}
+
+.btns button {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  font-size: 16px;
+  font-family: Helvetica;
+  padding: 3px;
+  background-clip: content-box;
+}
+
+.btns .btn-laps {
+  float: left;
+  border: 2px solid #303030;
+  margin: 10px 0px 0px 20px;
+  background-color: #303030;
+  color: #a8a8a8;
+}
+
+.btns .btn-reset {
+  border: 2px solid #4d4d4d;
+  background-color: #4d4d4d;
+  color: #f5f5f5;
+  position: relative;
+  top: 10px;
+  left: -80px;
+  visibility: hidden;
+}
+
+.btns .btn-start {
+  float: right;
+  border: 2px solid rgba(27, 61, 39);
+  margin: 10px 20px 0px 0px;
+  background-color: rgba(27, 61, 39);
+  color: rgba(46, 209, 87);
+}
+
+.btns .btn-stop {
+  border: 2px solid rgba(61, 22, 22);
+  background-color: rgba(61, 22, 22);
+  color: rgba(223, 59, 50);
+  position: relative;
+  top: 10px;
+  left: 89.5px;
+  visibility: hidden;
+}
+
+.laps {
+  height: 160px;
+  /* border: 1px solid red; */
+  overflow: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.laps hr {
+  border: 0;
+  border-top: 1px solid #4d4d4d;
+  margin-bottom: 40px;
+  float: left;
+  width: 375px;
+  /* overflow: hidden; */
+}
+
+.laps ul li {
+  border-top: 1px solid #4d4d4d;
+  height: 40px;
+  color: #f5f5f5;
+  font-size: 16px;
+  font-family: Helvetica;
+  line-height: 40px;
+  padding-left: 20px;
+}
+
+.laps ul li .stopwatch-right {
+  float: right;
+  margin-right: 20px;
+}
+
+.active .iconfont {
+  color: orange;
+}

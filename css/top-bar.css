@@ -1,0 +1,54 @@
+.top-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px;
+}
+
+.weather-style {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 33%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#weather {
+  display: flex;
+  flex-direction: column;
+}
+
+.clock-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.stopwatch-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 33%;
+}
+
+.stopwatch-btn input {
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(200, 164, 224);
+  color: white;
+}
+
+.stopwatch-btn input:hover {
+  cursor: pointer;
+}
+
+.stopwatch-btn input:active {
+  background-color: rgb(125, 81, 155);
+  transform: scale(0.96);
+}

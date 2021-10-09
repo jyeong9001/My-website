@@ -1,11 +1,9 @@
-@import "css/clock.css";
 @import "css/greetings.css";
 @import "css/todo.css";
-@import "css/weather.css";
+@import "css/top-bar.css";
 
 body {
   background-image: 0jpg;
-  text-align: center;
   height: 200vh;
   background-size: cover;
 }
