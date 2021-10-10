@@ -61,12 +61,11 @@ const yoil = date.getDay();
 const yoilelement = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
 const dateForm = document.querySelector(".date-form");
-const greetingForm = document.querySelector(".greetings-style h1");
+const mainForm = document.querySelector(".main-box");
 
 function paintDate() {
   dateForm.innerText = `${month}/${day}(${yoilelement[yoil]}) TO DO LIST`;
-  greetingForm.classList.add("margin-btm");
-  greetingForm.classList.remove("greetings-style__margin");
+  mainForm.classList.add("margin-top");
 }
 
 todoInput.addEventListener("click", paintDate);

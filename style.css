@@ -1,11 +1,13 @@
 @import "css/greetings.css";
 @import "css/todo.css";
 @import "css/top-bar.css";
+@import "css/main-box.css";
 
 body {
   background-image: 0jpg;
   height: 200vh;
   background-size: cover;
+  position: relative;
 }
 
 .hidden {

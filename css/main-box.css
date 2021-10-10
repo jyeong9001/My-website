@@ -1,0 +1,16 @@
+.main-box {
+  position: absolute;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.date-form {
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 30px;
+}

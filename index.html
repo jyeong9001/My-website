@@ -38,22 +38,30 @@
         <input type="submit" value="log in" />
       </form>
       <h1 id="greeting" class="hidden greetings-style__margin"></h1>
-      <div id="dating" class="hidden date-form"></div>
     </div>
 
-    <div class="todo-container">
-      <div class="todo-style">
-        <form id="todo-form">
-          <input type="text" placeholder="Write to do" required />
-        </form>
-        <ul id="todo-list"></ul>
+    <main class="main-box">
+      <div id="dating" class="hidden date-form"></div>
+
+      <div class="hidden todo-container">
+        <div class="todo-style">
+          <form id="todo-form">
+            <input
+              maxlength="19"
+              type="text"
+              placeholder="Write to do"
+              required
+            />
+          </form>
+          <ul id="todo-list"></ul>
+        </div>
       </div>
-    </div>
+    </main>
 
     <script src="js/clock.js"></script>
     <script src="js/greetings.js"></script>
     <script src="js/todo.js"></script>
-    <script src="js/weather.js"></script>
+    <!-- <script src="js/weather.js"></script> -->
     <script src="js/background.js"></script>
     <script src="js/date.js"></script>
   </body>
