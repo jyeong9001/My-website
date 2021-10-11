@@ -12,6 +12,8 @@
 .todo-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: auto;
   width: 440px;
   animation: showbox 3.8s ease-in-out forwards;
 }

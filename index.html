@@ -20,9 +20,7 @@
 
       <div class="stopwatch-btn">
         <form class="stopwatch-btn__form">
-          <a href="stopwatch.html">
-            <input type="button" value="stopwatch" />
-          </a>
+          <input type="button" value="stopwatch" />
         </form>
       </div>
     </div>
@@ -40,23 +38,43 @@
       <h1 id="greeting" class="hidden greetings-style__margin"></h1>
     </div>
 
-    <main class="main-box">
-      <div id="dating" class="hidden date-form"></div>
+    <div class="main-columns">
+      <main class="first-column">
+        <div id="dating" class="hidden date-form"></div>
 
-      <div class="hidden todo-container">
-        <div class="todo-style">
-          <form id="todo-form">
-            <input
-              maxlength="19"
-              type="text"
-              placeholder="Write to do"
-              required
-            />
-          </form>
-          <ul id="todo-list"></ul>
+        <div class="hidden todo-container">
+          <div class="todo-style">
+            <form id="todo-form">
+              <input
+                maxlength="19"
+                type="text"
+                placeholder="Write to do"
+                required
+              />
+            </form>
+            <ul id="todo-list"></ul>
+          </div>
+        </div>
+      </main>
+
+      <div class="hidden second-column stopwatch-container">
+        <div class="container">
+          <div class="topbar">
+            <span class="time" id="topbarTime"></span>
+          </div>
+          <div class="stopwatch">
+            <span id="stopwatch">00:00.00</span>
+          </div>
+          <div class="btns">
+            <button class="btn-laps" id="btn-laps">Laps</button>
+            <button class="btn-reset" id="btn-reset">Reset</button>
+            <button class="btn-start" id="btn-start">Start</button>
+            <button class="btn-stop" id="btn-stop">Stop</button>
+          </div>
+          <div class="laps" id="lapsContainer"></div>
         </div>
       </div>
-    </main>
+    </div>
 
     <script src="js/clock.js"></script>
     <script src="js/greetings.js"></script>
@@ -64,5 +82,6 @@
     <!-- <script src="js/weather.js"></script> -->
     <script src="js/background.js"></script>
     <script src="js/date.js"></script>
+    <script src="js/stopwatch.js"></script>
   </body>
 </html>

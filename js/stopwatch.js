@@ -1,3 +1,13 @@
+const stopwatchBtn = document.querySelector(".stopwatch-btn__form");
+const stopwatchBox = document.querySelector(".stopwatch-container");
+let classes = stopwatchBox.classList;
+
+function showStopwatch() {
+  let result = classes.toggle("hidden");
+}
+
+stopwatchBtn.addEventListener("click", showStopwatch);
+
 const milisec = 1,
   sec = milisec * 1000,
   min = sec * 60;

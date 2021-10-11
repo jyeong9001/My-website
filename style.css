@@ -2,10 +2,11 @@
 @import "css/todo.css";
 @import "css/top-bar.css";
 @import "css/main-box.css";
+@import "css/stopwatch.css";
 
 body {
   background-image: 0jpg;
-  height: 200vh;
+  height: 150vh;
   background-size: cover;
   position: relative;
 }
