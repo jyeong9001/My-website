@@ -15,6 +15,21 @@ body {
   display: none;
 }
 
+.show {
+  animation: slow-move 0.4s cubic-bezier(0, 0.95, 1, 1) forwards;
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+
+@keyframes slow-move {
+  0% {
+    position: relative;
+    right: -300px;
+  }
+  100% {
+    position: relative;
+    right: 50px;
+  }
 }

@@ -70,6 +70,7 @@
 .btns button:active {
   transform: scale(0.95);
 }
+
 .btns .btn-laps {
   float: left;
   border: 2px solid #303030;

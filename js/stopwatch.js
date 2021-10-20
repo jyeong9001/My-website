@@ -1,9 +1,12 @@
 const stopwatchBtn = document.querySelector(".stopwatch-btn__form");
 const stopwatchBox = document.querySelector(".stopwatch-container");
-let classes = stopwatchBox.classList;
+const todoBox = document.querySelector(".first-column");
+let classes1 = stopwatchBox.classList;
+let classes2 = todoBox.classList;
 
 function showStopwatch() {
-  let result = classes.toggle("hidden");
+  let result1 = classes1.toggle("hidden");
+  let result2 = classes2.toggle("show");
 }
 
 stopwatchBtn.addEventListener("click", showStopwatch);
