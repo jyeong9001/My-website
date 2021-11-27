@@ -1,6 +1,8 @@
 const toDoForm = document.getElementById("todo-form");
 const todoInput = toDoForm.querySelector("input");
 const toDoList = document.getElementById("todo-list");
+const dateForm = document.querySelector(".date-form");
+const mainForm = document.querySelector("#dating");
 
 const TODOS_KEY = "todos";
 
@@ -60,8 +62,6 @@ const day = date.getDate();
 const yoil = date.getDay();
 const yoilelement = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
-const dateForm = document.querySelector(".date-form");
-const mainForm = document.querySelector("#dating");
 
 function paintDate() {
   dateForm.innerText = `${month}/${day}(${yoilelement[yoil]}) TO DO LIST`;

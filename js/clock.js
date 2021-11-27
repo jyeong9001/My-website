@@ -5,15 +5,14 @@ function getDate() {
   const hours = date.getHours();
   const minutes = String(date.getMinutes()).padStart(2, "0");
   const seconds = String(date.getSeconds()).padStart(2, "0");
-  const miliseconds = String(date.getMilliseconds()).padStart(3, "0");
   if (hours === 12) {
-    clock.innerText = `PM ${hours}:${minutes}:${seconds}:${miliseconds}`;
+    clock.innerText = `PM ${hours}:${minutes}:${seconds}`;
   } else if (hours < 12) {
-    clock.innerText = `AM ${hours}:${minutes}:${seconds}:${miliseconds}`;
+    clock.innerText = `AM ${hours}:${minutes}:${seconds}`;
   } else {
-    clock.innerText = `PM ${hours - 12}:${minutes}:${seconds}:${miliseconds}`;
+    clock.innerText = `PM ${hours - 12}:${minutes}:${seconds}`;
   }
 }
 
 getDate();
-setInterval(getDate, 10);
+setInterval(getDate, 1);
